@@ -25,7 +25,7 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-them)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -52,8 +52,6 @@ web_modules/
 
 # Optional eslint cache
 .eslintcache
-
-# Optional stylelint cache
 .stylelintcache
 
 # Optional REPL history
@@ -70,7 +68,7 @@ web_modules/
 .env.*
 !.env.example
 
-# parcel-bundler cache (https://parceljs.org/)
+# Parcel-bundler cache
 .cache
 .parcel-cache
 
@@ -80,55 +78,50 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 .output
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
+
+# Public
 # public
 
-# vuepress build output
+# VuePress build output
 .vuepress/dist
-
-# vuepress v2.x temp directory
 .temp
 
-# Sveltekit cache directory
+# SvelteKit cache directory
 .svelte-kit/
 
-# vitepress build output
+# VitePress
 **/.vitepress/dist
-
-# vitepress cache directory
 **/.vitepress/cache
 
-# Docusaurus cache and generated files
+# Docusaurus
 .docusaurus
 
-# Serverless directories
-.serverless/
+# Serverless
+.serverless
 
-# FuseBox cache
-.fusebox/
+# FuseBox
+.fusebox
 
-# DynamoDB Local files
-.dynamodb/
+# DynamoDB Local
+.dynamodb
 
-# Firebase cache directory
-.firebase/
+# Firebase
+.firebase
 
-# TernJS port file
+# TernJS
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
+# VSCode test
 .vscode-test
 
 # pnpm
 .pnpm-store
 
-# yarn v3
+# Yarn v3
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -137,7 +130,25 @@ dist
 !.yarn/sdks
 !.yarn/versions
 
-# Vite files
+# Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Python / FastAPI
+backend/venv/
+backend/__pycache__/
+backend/**/*.py[cod]
+
+# Python cache
+*.pyc
+*.pyo
+*.pyd
+
+# Python test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Python build
+*.egg-info/
